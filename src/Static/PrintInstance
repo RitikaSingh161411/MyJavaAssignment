@@ -1,0 +1,27 @@
+package Static;
+
+public class PrintInstance {
+    // Instance variables
+    private int instanceVar1;
+    private String instanceVar2;
+
+    // Constructor to initialize instance variables
+    public PrintInstance(int var1, String var2) {
+        this.instanceVar1 = var1;
+        this.instanceVar2 = var2;
+    }
+
+    // Static method to print instance variables
+    public static void printInstanceVariables() {
+        // Create an instance of the class
+        PrintInstance instance = new PrintInstance(10, "Hello");
+
+        // Print instance variables
+        System.out.println("Instance Variable 1: " + instance.instanceVar1);
+        System.out.println("Instance Variable 2: " + instance.instanceVar2);
+    }
+    public static void main(String[] args) {
+        // Call the static method to print instance variables
+        printInstanceVariables();
+    }
+}
